@@ -1,0 +1,35 @@
+PROBABLEMENT LES NOTES ESTAN DESACTUALITZADES
+
+- En el control de memòria no hi ha ningun suport per a la Work RAM ni
+  per a la BIOS. Tampoc se molt bé en que consisteix suportar-ho.
+- No he fet res del port de control de IO per què no entenc res.
+- No he implementat el mapping de la RAM.
+- Segons la llista de SMS falta la instrucció SLL.
+- No hi ha res fet del control EXT.
+- Repasar el significat dels primers ports.
+- Sols s'ha implementat un mode gràfic.
+- Comprovar que els cicles que transcorren entre una interrupció i una
+  altra són els cicles que toquen. (Crec que està bé).
+- Bugs coneguts:
+
+  - SegaPack: En el de tenis es sent un soroll extrany. !!!! Aquest
+    problema l'he solucionat no permeten que es canvie el volum quan
+    ja s'ha fet un latch. Teoricament açò no es incorrecte, però sols
+    afecta a aquest joc dels que coneix i soluciona el problema. El
+    problema era que en el canal 2 després d'apagar el volum a vegades
+    baixa la frequüència a 10, i de repent fica el volum a tope (d'una
+    manera no molt estàndard). Segurament l'error està en un altre
+    lloc, però de moment aquest arreglo funciona.
+  - Sonic2: En la introducció el doctor robotnik fa coses rares (tal
+    volta és correcte) i el logo de SEGA ix una línia negra. En altres
+    emuladors passa algo semblant en lo de robtnik. El tema del logo
+    és més extrany, tal volta hi hauria que perdre algo de temps amb
+    aquest tema. Vore sonic2.txt.
+  - DoubleDragon: Al jugar el fondo no es veu bé (RAM management??).
+  - Sonic: En la segona fase del pont al principi es veu un efecte
+    extrany en les ones.
+  - Efectes extranys en els sprites, per exemple, les votes del
+    jugador del logo d'Acclaim en el NBA. Pareix que passa en altres
+    emuladors també.
+  - En MegaMan, en la fase de Napalm, efectes gràfics en les línies
+    superiors.
