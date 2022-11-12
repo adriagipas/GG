@@ -522,7 +522,11 @@ def ps_generate_tiles(bank,addr,ntiles,pal=PAL16):
     return ret
 
 GG.init()
-GG.set_rom ( open('ROM.gg','rb').read() )
+#GG.set_rom ( open( '/home/adria/romdb/Sega Game Pack 4 in 1 [GG]/Sega 4 in 1 Pack (UE).gg','rb' ).read() )
+#GG.set_rom ( open( '/home/adria/jocs/ROMS/Columns (UE) [!].gg','rb' ).read() )
+#GG.set_rom ( open( '/home/adria/jocs/ROMS/Sonic the Hedgehog (JUE).gg','rb' ).read() )
+#GG.set_rom ( open( '/home/adria/jocs/ROMS/Megaman (JUE).gg','rb' ).read() )
+GG.set_rom ( open('/home/adria/COLJOCS/GG/NBA Jam Tournament Edition/imgs/NBA Jam Tournament Edition (JUE).gg','rb').read() )
 rom= GG.get_rom()
 #print ( 'Checksum: %d'%rom['checksum'] )
 #print ( 'Product code: %d'%rom['code'] )
